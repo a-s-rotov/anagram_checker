@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class CheckerController {
 
-    private CheckerService checkerService;
+    private final CheckerService checkerService;
 
     @PostMapping("/check")
     public ResponseDto checkAnagram(@RequestBody RequestDto requestDto){
